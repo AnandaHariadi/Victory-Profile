@@ -13,15 +13,15 @@ export default function HeroSection() {
         <iframe
           src="https://www.youtube.com/embed/94epM58Z7Tc?autoplay=1&mute=1&loop=1&playlist=94epM58Z7Tc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
           title="Background Video"
-          className="absolute top-1/2 left-1/2 w-[150vw] h-[150vh] min-w-[1920px] min-h-[1080px] -translate-x-1/2 -translate-y-1/2 opacity-40 pointer-events-none"
+          className="absolute top-1/2 left-1/2 w-[150vw] h-[150vh] min-w-[1920px] min-h-[1080px] -translate-x-1/2 -translate-y-1/2 opacity-70 pointer-events-none"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           aria-hidden="true"
         />
 
         {/* Dark overlay for corporate look and text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/90 via-navy-900/70 to-navy-950/90 mix-blend-multiply pointer-events-none" />
-        <div className="absolute inset-0 bg-navy-950/30 pointer-events-none" />
-        <div className="absolute inset-0 pattern-grid opacity-20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/70 via-navy-900/50 to-navy-950/70 mix-blend-multiply pointer-events-none" />
+        <div className="absolute inset-0 bg-navy-950/10 pointer-events-none" />
+        <div className="absolute inset-0 pattern-grid opacity-10 pointer-events-none" />
         
         {/* Animated background elements */}
         <motion.div 
@@ -44,10 +44,6 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center"
           >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8">
-              <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse" />
-              <span className="text-sm font-medium text-white">Pialang Berjangka Resmi BAPPEBTI</span>
-            </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-8">
               Mitra Trading Global <br />

@@ -231,15 +231,7 @@ export default function BukaAkunPage() {
           )}
         </div>
 
-        {/* Security Trust Badges */}
-        <div className="mt-12 flex flex-wrap justify-center items-center gap-8 opacity-60">
-           <div className="flex items-center gap-2 text-slate-600 font-semibold">
-             <Shield className="w-5 h-5 text-slate-500" /> Enkripsi SSL 256-bit
-           </div>
-           <div className="flex items-center gap-2 text-slate-600 font-semibold">
-             <CheckCircle2 className="w-5 h-5 text-slate-500" /> Diawasi BAPPEBTI
-           </div>
-        </div>
+
 
       </div>
     </main>
