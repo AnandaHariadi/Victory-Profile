@@ -6,7 +6,60 @@ import { Dialog } from '@headlessui/react';
 import { X, MapPin, Briefcase, Clock, CheckCircle2, ChevronRight, Send } from 'lucide-react';
 import SectionWrapper from '../ui/SectionWrapper';
 import GradientButton from '../ui/GradientButton';
-import { jobPositions, JobPosition } from '@/lib/data';
+export interface JobPosition {
+  id: string;
+  title: string;
+  department: string;
+  location: string;
+  type: string;
+  description: string;
+  requirements: string[];
+}
+
+const jobPositions: JobPosition[] = [
+  {
+    id: '1',
+    title: 'Senior Financial Analyst',
+    department: 'Research & Analysis',
+    location: 'Surabaya',
+    type: 'Full-time',
+    description: 'Menganalisis tren pasar global dan memberikan rekomendasi trading kepada klien institusional dan retail.',
+    requirements: [
+      'Minimal S1 jurusan Ekonomi, Keuangan, atau terkait',
+      'Pengalaman minimal 3 tahun di industri pialang/keuangan',
+      'Memiliki sertifikasi WPPE/WMI menjadi nilai tambah',
+      'Kemampuan analisis teknikal dan fundamental yang kuat'
+    ]
+  },
+  {
+    id: '2',
+    title: 'Wealth Manager',
+    department: 'Sales & Marketing',
+    location: 'Surabaya',
+    type: 'Full-time',
+    description: 'Membangun dan memelihara hubungan dengan klien HNW (High Net Worth) serta memberikan solusi investasi.',
+    requirements: [
+      'Pengalaman sales/marketing minimal 2 tahun',
+      'Memiliki jaringan klien yang luas',
+      'Kemampuan komunikasi dan presentasi yang sangat baik',
+      'Berorientasi pada target'
+    ]
+  },
+  {
+    id: '3',
+    title: 'Customer Support Specialist',
+    department: 'Operations',
+    location: 'Surabaya',
+    type: 'Full-time',
+    description: 'Memberikan dukungan teknis dan bantuan operasional kepada nasabah Victory International Futures.',
+    requirements: [
+      'Pendidikan minimal D3 semua jurusan',
+      'Bersedia bekerja dalam sistem shift',
+      'Kemampuan problem solving yang baik',
+      'Familiar dengan platform MetaTrader'
+    ]
+  }
+];
 
 export default function CareerSection() {
   const [selectedJob, setSelectedJob] = useState<JobPosition | null>(null);
