@@ -30,7 +30,7 @@
   --color-card-bg: rgba(255, 255, 255, 0.05);
 
   /* === FONTS === */
-  --font-heading: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  --font-heading: var(--font-cinzel), 'Cinzel', serif;
   --font-body: var(--font-jakarta), 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
 
   /* === ANIMATION TIMING === */

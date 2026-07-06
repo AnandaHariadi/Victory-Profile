@@ -39,18 +39,12 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <Image
-              src="/logo.png"
+              src="/victory-logo.png"
               alt="Victory International Futures"
-              width={40}
-              height={40}
-              className={cn(
-                "w-10 h-10 object-contain transition-all",
-                isNavbarSolid ? "invert opacity-80" : "invert-0"
-              )}
+              width={180}
+              height={48}
+              className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />
-            <div className={cn("font-heading font-bold text-lg tracking-tight transition-colors", isNavbarSolid ? "text-navy-900" : "text-white")}>
-              {companyInfo.shortName}
-            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Cinzel, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -7,7 +7,7 @@ import AIChatbot from "@/components/ai/AIChatbot";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: '--font-jakarta' });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: '--font-playfair' });
+const cinzel = Cinzel({ subsets: ["latin"], variable: '--font-cinzel' });
 
 export const metadata: Metadata = {
   title: "Victory International Futures | Pialang Berjangka Terpercaya",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className="scroll-smooth">
-      <body className={`${inter.variable} ${jakarta.variable} ${playfair.variable} font-body bg-slate-50 text-slate-900 antialiased`}>
+      <body className={`${inter.variable} ${jakarta.variable} ${cinzel.variable} font-body bg-slate-50 text-slate-900 antialiased`}>
         <Navbar />
         <main className="min-h-screen">
           {children}

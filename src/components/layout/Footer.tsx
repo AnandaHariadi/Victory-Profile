@@ -15,19 +15,16 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Company Info */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
+          <div className="lg:col-span-1">
+            <Link href="/" className="flex items-center gap-3 mb-6 group">
               <Image
-                src="/logo.png"
+                src="/victory-logo.png"
                 alt="Victory International Futures"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain brightness-0 invert"
+                width={180}
+                height={48}
+                className="h-12 w-auto object-contain"
               />
-              <span className="font-heading font-bold text-xl text-white">
-                {companyInfo.shortName}
-              </span>
-            </div>
+            </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
               {companyInfo.description}
             </p>
