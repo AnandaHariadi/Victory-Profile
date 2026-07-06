@@ -10,8 +10,8 @@ export const companyInfo = {
   tagline: 'Investasi Cerdas, Masa Depan Cerah',
   description: 'Perusahaan pialang berjangka terpercaya yang berlisensi resmi BAPPEBTI, menyediakan layanan perdagangan forex, komoditas, dan indeks saham sejak 2003.',
   founded: 2003,
-  headquarters: 'Pakuwon Center, Surabaya',
-  address: 'Pakuwon Center Lt. 12, Jl. Embong Malang No. 1-5, Surabaya 60261',
+  headquarters: 'Jl. Diponegoro No. 153, Darmo, Surabaya',
+  address: 'Jl. Diponegoro No. 153, Darmo, Surabaya 60241',
   phone: '+62 31 9999 8888',
   email: 'info@victoryifx.co.id',
   website: 'www.victoryifx.co.id',
@@ -360,7 +360,7 @@ export interface GalleryItem {
 }
 
 export const galleryItems: GalleryItem[] = [
-  { id: 'g1', title: 'Kantor Pusat Pakuwon Center', category: 'Kantor', description: 'Tampak lobby utama kantor pusat VIF di Pakuwon Center, Surabaya' },
+  { id: 'g1', title: 'Kantor Pusat Diponegoro', category: 'Kantor', description: 'Tampak lobby utama kantor pusat VIF di Jl. Diponegoro No. 153, Darmo, Surabaya' },
   { id: 'g2', title: 'Trading Floor', category: 'Kantor', description: 'Ruang trading dengan monitor dan fasilitas modern' },
   { id: 'g3', title: 'Seminar Trading 2024', category: 'Event', description: 'Seminar edukasi trading bersama 200+ peserta' },
   { id: 'g4', title: 'Workshop Technical Analysis', category: 'Training', description: 'Workshop intensif analisis teknikal oleh trainer berpengalaman' },
