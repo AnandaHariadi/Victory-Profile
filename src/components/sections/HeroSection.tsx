@@ -7,25 +7,31 @@ import GradientButton from '../ui/GradientButton';
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background with parallax effect */}
-      <div className="absolute inset-0 gradient-hero z-0">
-        <div className="absolute inset-0 pattern-grid opacity-20" />
+      {/* Background with YouTube Video and overlays */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-navy-950">
+        {/* YouTube Iframe - scaled up to hide edges and simulate object-cover */}
+        <iframe
+          src="https://www.youtube.com/embed/94epM58Z7Tc?autoplay=1&mute=1&loop=1&playlist=94epM58Z7Tc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+          title="Background Video"
+          className="absolute top-1/2 left-1/2 w-[150vw] h-[150vh] min-w-[1920px] min-h-[1080px] -translate-x-1/2 -translate-y-1/2 opacity-40 pointer-events-none"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          aria-hidden="true"
+        />
+
+        {/* Dark overlay for corporate look and text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/90 via-navy-900/70 to-navy-950/90 mix-blend-multiply pointer-events-none" />
+        <div className="absolute inset-0 bg-navy-950/30 pointer-events-none" />
+        <div className="absolute inset-0 pattern-grid opacity-20 pointer-events-none" />
         
         {/* Animated background elements */}
         <motion.div 
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"
-          animate={{ 
-            x: [0, 50, 0],
-            y: [0, -50, 0],
-          }}
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"
+          animate={{ x: [0, 50, 0], y: [0, -50, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-navy-600/20 rounded-full blur-3xl"
-          animate={{ 
-            x: [0, -50, 0],
-            y: [0, 50, 0],
-          }}
+          className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-navy-600/20 rounded-full blur-3xl pointer-events-none"
+          animate={{ x: [0, -50, 0], y: [0, 50, 0] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
