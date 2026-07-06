@@ -22,7 +22,7 @@ export default function Footer() {
                 alt="Victory International Futures"
                 width={180}
                 height={48}
-                className="h-12 w-auto object-contain"
+                className="h-12 w-auto object-contain brightness-0 invert opacity-90 transition-opacity hover:opacity-100"
               />
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">

@@ -43,7 +43,10 @@ export default function Navbar() {
               alt="Victory International Futures"
               width={180}
               height={48}
-              className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              className={cn(
+                "h-10 md:h-12 w-auto object-contain transition-all duration-300",
+                !isNavbarSolid && "brightness-0 invert"
+              )}
             />
           </Link>
 
