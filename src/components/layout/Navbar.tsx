@@ -36,16 +36,31 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          {/* Logo - swaps between normal and inverted version */}
+          <Link href="/" className="flex items-center gap-3 group relative">
+            {/* Logo for solid/light navbar */}
             <Image
               src="/victory-logo.png"
               alt="Victory International Futures"
               width={180}
               height={48}
+              priority
+              unoptimized
               className={cn(
-                "h-10 md:h-12 w-auto object-contain transition-all duration-300",
-                !isNavbarSolid && "brightness-0 invert"
+                "h-10 md:h-12 w-auto object-contain transition-opacity duration-300",
+                isNavbarSolid ? "opacity-100" : "opacity-0 absolute"
+              )}
+            />
+            {/* Logo for transparent/dark navbar - white version via CSS filter */}
+            <Image
+              src="/victory-logo.png"
+              alt="Victory International Futures"
+              width={180}
+              height={48}
+              unoptimized
+              className={cn(
+                "h-10 md:h-12 w-auto object-contain transition-opacity duration-300 brightness-0 invert",
+                !isNavbarSolid ? "opacity-100" : "opacity-0 absolute"
               )}
             />
           </Link>
