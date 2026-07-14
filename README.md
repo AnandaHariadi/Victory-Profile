@@ -1,12 +1,5 @@
 # 🏆 Victory International Futures — Website Profile
 
-<div align="center">
-
-![Victory International Futures](./public/victory-logo.png)
-
-**Platform web resmi PT Victory International Futures**  
-Pialang Berjangka Komoditi berlisensi BAPPEBTI sejak 2003
-
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.10-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.4-61DAFB?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org/)
