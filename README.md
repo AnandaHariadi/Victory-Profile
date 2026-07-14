@@ -1,4 +1,4 @@
-# 🏆 Victory International Futures — Website Profile
+# Victory International Futures — Website Profile
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.10-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.4-61DAFB?logo=react)](https://react.dev/)
@@ -7,25 +7,6 @@
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.x-FF0055?logo=framer)](https://www.framer.com/motion/)
 
 </div>
-
----
-
-## 📋 Daftar Isi
-
-- [Gambaran Umum](#-gambaran-umum)
-- [Fitur Utama](#-fitur-utama)
-- [Tech Stack](#-tech-stack)
-- [Struktur Proyek](#-struktur-proyek)
-- [Arsitektur & Design System](#-arsitektur--design-system)
-- [Halaman & Routing](#-halaman--routing)
-- [Komponen](#-komponen)
-- [Library Utility (lib/)](#-library-utility-lib)
-- [Cara Menjalankan](#-cara-menjalankan)
-- [Scripts](#-scripts)
-- [Konfigurasi](#-konfigurasi)
-- [Konvensi Kode](#-konvensi-kode)
-
----
 
 ## 🌐 Gambaran Umum
 
