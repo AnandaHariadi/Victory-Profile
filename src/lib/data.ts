@@ -40,12 +40,8 @@ export const navLinks = [
   { label: 'Platform', href: '#platform' },
   { label: 'Tools', href: '#tools' },
   { label: 'AI Center', href: '#ai-center' },
-  { label: 'Edukasi', href: '/edukasi' },
-  { label: 'Berita', href: '/berita' },
-  { label: 'OHLC', href: '/ohlc' },
-  { label: 'Galeri', href: '/galeri' },
-  { label: 'Karir', href: '/karir' },
   { label: 'Kontak', href: '/kontak' },
+  // Explore sub-menu (Edukasi, Berita, OHLC, Galeri, Karir) is now in the Navbar "Jelajahi" dropdown
 ];
 
 // === PRODUCTS ===

@@ -11,6 +11,10 @@ interface SectionWrapperProps {
   containerClassName?: string;
   direction?: 'up' | 'down' | 'left' | 'right' | 'none';
   delay?: number;
+  /** Set true to skip the trading pattern overlay */
+  noPattern?: boolean;
+  /** Use dark (white) trading pattern instead of light (black) — for dark bg sections */
+  darkPattern?: boolean;
 }
 
 export default function SectionWrapper({
@@ -20,6 +24,8 @@ export default function SectionWrapper({
   containerClassName,
   direction = 'up',
   delay = 0,
+  noPattern = false,
+  darkPattern = false,
 }: SectionWrapperProps) {
   const getVariants = () => {
     switch (direction) {
@@ -40,8 +46,17 @@ export default function SectionWrapper({
 
   return (
     <section id={id} className={cn('py-20 relative overflow-hidden', className)}>
+      {/* Trading/finance pattern overlay — transparent on all sections */}
+      {!noPattern && (
+        <div
+          className={cn(
+            'absolute inset-0 pointer-events-none select-none',
+            darkPattern ? 'pattern-trading opacity-[0.05]' : 'pattern-trading-light opacity-[0.03]'
+          )}
+        />
+      )}
       <motion.div
-        className={cn('container mx-auto px-4 sm:px-6 lg:px-8', containerClassName)}
+        className={cn('container mx-auto px-4 sm:px-6 lg:px-8 relative z-10', containerClassName)}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-100px' }}
@@ -53,3 +68,4 @@ export default function SectionWrapper({
     </section>
   );
 }
+

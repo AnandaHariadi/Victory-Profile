@@ -8,7 +8,8 @@ import { platformFeatures } from '@/lib/data';
 
 export default function PlatformSection() {
   return (
-    <SectionWrapper id="platform" className="bg-navy-950 text-white overflow-hidden py-24 relative">
+    <SectionWrapper id="platform" className="bg-navy-950 text-white overflow-hidden py-24 relative" darkPattern>
+
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-navy-900 to-transparent pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold-900/10 rounded-full blur-3xl pointer-events-none" />
