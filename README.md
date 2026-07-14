@@ -590,7 +590,3 @@ Proyek ini bersifat **privat** dan dikembangkan untuk keperluan internal PT Vict
 
 ---
 
-<div align="center">
-  <p>Dibuat dengan ❤️ untuk PT Victory International Futures</p>
-  <p><strong>© 2024 Victory International Futures. All Rights Reserved.</strong></p>
-</div>
